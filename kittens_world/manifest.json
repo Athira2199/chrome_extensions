@@ -1,0 +1,22 @@
+{
+  "manifest_version":2,
+  "name": "Kitten World",
+  "description":"Changes all images to kitten images",
+  "version":"1.0",
+  "web_accessible_resources":[
+    "images/kitten1.jpg",
+    "images/kitten2.jpg",
+    "images/kitten3.jpg",
+    "images/kitten4.jpg"
+  ],
+  "browser_action":{
+    "default_icon":"images/get_started16.png",
+    "default_popup":"kittens.html"
+  },
+  "content_scripts": [
+   {
+     "matches": ["http://*/*","https://*/*"],
+     "js": ["kittens.js"]
+   }
+ ]
+}

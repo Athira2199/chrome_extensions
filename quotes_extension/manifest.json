@@ -1,0 +1,13 @@
+{
+  "manifest_version":2,
+  "name": "Lifechanging Quotes",
+  "description":"present thoughts make who we are to be in the future",
+  "version":"1.0",
+  "browser_action":{
+    "default_icon":"images/get_started16.png",
+    "default_popup":"popup.html"
+  },
+  "chrome_url_overrides":{
+    "newtab":"quotes.html"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "manifest_version":2,
+  "name": "Getting Started With Extensions",
+  "description":"This extension shows a Google Image search result for the current page",
+  "version":"1.0",
+  "browser_action":{
+    "default_icon":"images/get_started16.png",
+    "default_popup":"popup.html",
+    "default_title":"My custom google page !"
+  },
+   "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+   {
+     "matches": ["http://*/*","https://*/*"],
+     // "css": ["myStyles.css"],
+     "js": ["contentScript.js"]
+   }
+ ]
+  // "permissions":["activeTab",
+  //   "https://ajax.googleapi.com/"
+  // ]
+}
